@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"system11"
+"struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+
+	<package name="LessonDesign" extends="struts-default">
+		<action name="userSelectAct" class="action.userSelectAct">
+			<result name="success">/login.jsp</result>
+			<result name="error">/studyInfo.jsp</result>
+		</action>
+		<action name="userLoginAct" class="action.userLoginAct">
+			<result name="success">/teacherGUI.jsp</result>
+			<result name="error">/loginError.jsp</result>
+		</action>
+		<action name="StudyInfoDeployAct" class="action.StudyInfoDeployAct">
+			<result name="success">/teacherGUI.jsp</result>
+		</action>
+		<action name="TeacherLogoutAct" class="action.TeacherLogoutAct">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="GetSyudyInfoListAct" class="action.GetSyudyInfoListAct">
+			
+		</action>
+		
+		
+	</package>
+</struts>
